@@ -1,4 +1,3 @@
-# Hortua_Brayan_Earbuds-Prom-Pg
 <h1 align ="center">Earbus-promo-site - Brayan Hortua Rodriguez</h1>
 
 <h4 align ="center">by Brayan Hortua Rodriguez</h4>
