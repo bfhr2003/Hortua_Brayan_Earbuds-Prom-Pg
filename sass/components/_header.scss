@@ -1,5 +1,5 @@
 .hamburger {
-    position: relative;
+    // position: relative;
     display: block;
     width: 35px;
     cursor: pointer;
@@ -11,21 +11,24 @@
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
-    content: '';
+    content:'';
+    position: relative;
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #0400ff;
+    background-color: #000000;
     margin: 6px 0px;
     transition: 0.4s;
 }
 
 .hamburger.is-active:before {
     transform: rotate(-45deg) translate(-8px,6px);
+    z-index: 100;
 }
 
 .hamburger.is-active:after {
     transform: rotate(45deg) translate(-9px,-8px);
+    z-index: 100;
 }
 
 .hamburger.is-active .bar {
@@ -34,12 +37,11 @@
 
 .mobile-nav {
     position: fixed;
-    top: 7%;
+    top: 0%;
     left: 100%;
     width: 100%;
     min-height: 100vh;
     display: block;
-    z-index: 98;
     background-color: #006eff;
     padding-top: 120px;
     transition: 0.4s;
@@ -47,6 +49,7 @@
 
 .mobile-nav.is-active {
     left: 0;
+    top: 0;
 }
 
 .mobile-nav a {
@@ -62,7 +65,7 @@
 }
 
 .mobile-nav a:hover {
-    background-color: #5d00ff;
+    background-color: #000000;
 }
 
 .social-media-style {
