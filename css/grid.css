@@ -24,11 +24,6 @@ html {
   }
   
   /* ---Utility Classes--- */
-  
-  .hidden {
-    display: none;
-  }
-
   .box {
     background-color: powderblue;
     color: rgb(27, 27, 27);
