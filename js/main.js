@@ -1,6 +1,8 @@
 (() => {
     //console.log("IIFE Fired");
     //variables
+    const menu_btn = document.querySelector('.hamburger');
+    const mobile_menu = document.querySelector('.mobile-nav');
     const model = document.querySelector("#model");
     const hotspots = document.querySelectorAll(".Hotspot");
     const infoBoxes = [
@@ -95,6 +97,11 @@
     }
   
     //Event Listener
+    menu_btn.addEventListener('click', function () {
+      menu_btn.classList.toggle('is-active');
+      mobile_menu.classList.toggle('is-active');
+  });
+
     model.addEventListener("load", modelLoaded);
   
     hotspots.forEach(function (hotspot) {
