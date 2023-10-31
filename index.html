@@ -1,118 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Skeleton Airpods</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/grid.css" rel="stylesheet"/>
-    <link href="css/main.css" rel="stylesheet"/>
-    <!-- link to greensock main library and scroll plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  </head>
-  <body>
-    <h1 class="hidden">Skeleton Airpods</h1>
-    <header>
-        <div class="grid-con">
-            <h2 class="hidden">Header - Promo Page</h2>
-            <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-span-2 xl-col-span-2">
-                <a href="index.html">
-                    <img src="images/logo_skeleton.png" alt="Fanshawe logo" width="170" height="100">
-                    <h2>Skeleton Airpods</h2>
-                </a>
+    <head>
+        <title>Skeleton Airpods</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/grid.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+        <!-- link to greensock main library and scroll plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    </head>
+
+    <body>
+        <h1 class="hidden">Skeleton Airpods</h1>
+        <header>
+            <div class="grid-con">
+                <h2 class="hidden">Header - Promo Page</h2>
+                <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-span-2 xl-col-span-2">
+                    <a href="index.html">
+                        <img src="images/skeleton_logo.svg" alt="Fanshawe logo" width="100" height="80">
+                        <h2 class="hidden">Skeleton Airpods</h2>
+                    </a>
+                </div>
             </div>
-        </div>
-        <article class="col-start-4 col-end-4 m-col-start-11 m-col-end-13 l-col-span-10 xl-col-span-10 desktop">
-            <h3 class="hidden">Header Navbar Desktop</h3>
-            <nav class="flex-cont-header desktop">
-                <h4 class="hidden">Header Navigation Desktop</h4>
-                <ul class="ul-navigation animation">
-                    <li class="flex-header desktop items"><a href="index.html">Overview</a></li>
-                    <li class="flex-header desktop items"><a href="#">Information</a></li>
-                    <li class="flex-header desktop items"><a href="#">Features</a></li>
-                    <li class="flex-header desktop items"><a href="#">Buy</a></li>
-                </ul>
-            </nav>
-        </article>
-        <article
-                class="col-start-4 col-end-4 m-col-start-3 m-col-end-12 l-col-span-10 xl-col-span-10 nav-bar tablet">
-                <h3 class="hidden">Header Navbar Tablet</h3>
-                <nav class="flex-cont-header tablet">
-                    <h4 class="hidden">Header Navigation Tablet</h4>
-                    <ul class="ul-navigation-tablet animation-tablet">
-                        <li class="flex-header tablet items"><a href="index.html">Overview</a></li>
-                        <li class="flex-header tablet items"><a href="#">Information</a></li>
-                        <li class="flex-header tablet items"><a href="#">Features</a></li>
-                        <li class="flex-header tablet items"><a href="#">Buy</a></li>
+            <article class="col-start-4 col-end-4 m-col-start-11 m-col-end-13 l-col-span-10 xl-col-span-10 desktop">
+                <h3 class="hidden">Header Navbar Desktop</h3>
+                <nav class="flex-cont-header desktop">
+                    <h4 class="hidden">Header Navigation Desktop</h4>
+                    <ul class="ul-navigation animation">
+                        <li class="flex-header desktop items"><a href="index.html">Overview</a></li>
+                        <li class="flex-header desktop items"><a href="index.html">Information</a></li>
+                        <li class="flex-header desktop items"><a href="index.html">Features</a></li>
+                        <li class="flex-header desktop items"><a href="index.html">Buy</a></li>
                     </ul>
                 </nav>
             </article>
+            <article
+                    class="col-start-4 col-end-4 m-col-start-3 m-col-end-12 l-col-span-10 xl-col-span-10 nav-bar tablet">
+                    <h3 class="hidden">Header Navbar Tablet</h3>
+                    <nav class="flex-cont-header tablet">
+                        <h4 class="hidden">Header Navigation Tablet</h4>
+                        <ul class="ul-navigation-tablet animation-tablet">
+                            <li class="flex-header tablet items"><a href="index.html">Overview</a></li>
+                            <li class="flex-header tablet items"><a href="index.html">Information</a></li>
+                            <li class="flex-header tablet items"><a href="index.html">Features</a></li>
+                            <li class="flex-header tablet items"><a href="index.html">Buy</a></li>
+                        </ul>
+                    </nav>
+                </article>
+                <!-- Mobile Menu -->
+                <div class="mobile">
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li><a href="index.html">Overview</a></li>
+                            <li><a href="index.html">Information</a></li>
+                            <li><a href="index.html">Features</a></li>
+                            <li><a href="index.html">Buy</a></li>
+                        </ul>
+                    </nav>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </div>
+        </header>
 
-            <!-- Mobile Menu -->
-            <div class="mobile">
-                <nav class="mobile-nav">
-                    <ul>
-                        <li><a href="index.html">Overview</a></li>
-                        <li><a href="#">Information</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Buy</a></li>
-                    </ul>
-                </nav>
-                <button class="hamburger">
-                    <div class="bar"></div>
-                </button>
+        <main>
+            <section class="full-width-grid-con">
+                <h2 class="hidden">Promo - Video</h2>
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                    <div class="promo-video">
+                        <div class="video-s">
+                            <embed
+                                src="https://player.vimeo.com/video/879665637?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" class="video-style"
+                                title="video1" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hero-img">
+                <h2 class="hidden">Overview - Main Title</h2>
+                <picture>
+                    <img src="images/hero-image.jpg" alt="Hero image">
+                </picture>
+                <article>
+                    <h2 class="skeleton-title">Skeleton Airpods</h2>
+                </article>
+            </section>
+            <section class="hero-img-2">
+                <h2 class="hidden">Information - Section Title</h2>
+                <picture>
+                    <img src="images/case_close.jpg" alt="Hero image 2">
+                </picture>
+                <article>
+                    <h2 class="skeleton-title">Quality Sound Speaker</h2>
+                </article>
+            </section>
+
+            <section class="full-width-grid-con">
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                    <article>
+                        <h2 class="viewer-title">Main Features - Try Now!</h2>
+                    </article>
+                </div>
+            </section>
+            <model-viewer id="model" src="model/airpods.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="images/airpods.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1.05" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.17" interection-prompt="none">
+
+            <button class="Hotspot" slot="hotspot-2" data-position="-37.97266012832578m 69.70371595390915m 14.470460031044228m" data-normal="-0.1979312345452373m 0.33131074264201393m 0.9225271910363377m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-1"></div>
+            </button>
+
+            <button class="Hotspot" slot="hotspot-3" data-position="-25.45117997347545m 71.44221273425588m 13.595402340769263m" data-normal="0.23637070255449708m 0.3276557187843189m 0.9147516717239849m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-2"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-4" data-position="-7.480159504837719m 69.34813482138672m -4.353697151484917m" data-normal="0.993606091019324m 0.08514286499762527m -0.07414599402054699m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-3"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-6" data-position="-7.7907304763793945m 61.84696668802367m 1.7253937228605416m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-4"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-7" data-position="-32.07781967903858m 64.11532432058033m -19.49967739772301m" data-normal="0m 0.03818162492671413m -0.9992708159042553m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-5"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-8" data-position="-30.87926004006338m -0.9844312892499829m -14.161562498065964m" data-normal="0.23294841084848633m -0.9724890939661817m 0m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-6"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-9" data-position="-32.43711082233773m 16.28810105727395m -8.057008002901483m" data-normal="0.000014340972061605638m -0.000005298071688737863m 0.9999999998831336m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-7"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-10" data-position="-31.63578649845801m 32.462171853195315m -7.376959800720186m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-8"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-11" data-position="-26.71283346829913m 49.56460246970711m -18.605145222967046m" data-normal="0.5737541081778038m -6.778170206915555e-7m -0.8190276084166112m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-9"></div>
+            </button>
+
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
             </div>
-    </header>
-    <model-viewer id="model" src="model/airpods.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="images/airpods.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1.05" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.17" interection-prompt="none">
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="images/ar_hand_prompt.png">
+            </div>
+            </model-viewer>   
+        </main>
 
-      <button class="Hotspot" slot="hotspot-2" data-position="-37.97266012832578m 69.70371595390915m 14.470460031044228m" data-normal="-0.1979312345452373m 0.33131074264201393m 0.9225271910363377m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-1"></div>
-      </button>
-
-      <button class="Hotspot" slot="hotspot-3" data-position="-25.45117997347545m 71.44221273425588m 13.595402340769263m" data-normal="0.23637070255449708m 0.3276557187843189m 0.9147516717239849m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-2"></div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-4" data-position="-7.480159504837719m 69.34813482138672m -4.353697151484917m" data-normal="0.993606091019324m 0.08514286499762527m -0.07414599402054699m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-3"></div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-6" data-position="-7.7907304763793945m 61.84696668802367m 1.7253937228605416m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-4"></div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-7" data-position="-32.07781967903858m 64.11532432058033m -19.49967739772301m" data-normal="0m 0.03818162492671413m -0.9992708159042553m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-5"></div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-8" data-position="-30.87926004006338m -0.9844312892499829m -14.161562498065964m" data-normal="0.23294841084848633m -0.9724890939661817m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-6"></div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-9" data-position="-32.43711082233773m 16.28810105727395m -8.057008002901483m" data-normal="0.000014340972061605638m -0.000005298071688737863m 0.9999999998831336m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-7"></div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-10" data-position="-31.63578649845801m 32.462171853195315m -7.376959800720186m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-8"></div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-11" data-position="-26.71283346829913m 49.56460246970711m -18.605145222967046m" data-normal="0.5737541081778038m -6.778170206915555e-7m -0.8190276084166112m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation" id="hotspot-9"></div>
-      </button>
-
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="images/ar_hand_prompt.png">
-      </div>
-    </model-viewer>   
-    <!-- Loads <model-viewer> for browsers: -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+        <footer>
+            <p class="copyright"> Brayan Felipe Hortua Rodriguez &copy; - 2023 All Rights Reserved.</p>
+        </footer>
+        <!-- Loads <model-viewer> for browsers: -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
