@@ -3,7 +3,7 @@
 <h4 align ="center">by Brayan Hortua Rodriguez</h4>
 
 
-**Welcome 🕹️!,** This repository contains the source code and necessary resources for the development of a promotional website for state-of-the-art wireless earbuds. The purpose of this project is to provide visitors with detailed information about the features, advantages, and benefits of these earbuds, as well as an interactive and engaging experience that encourages them to make a purchase.
+**Welcome 🎧!,** This repository contains the source code and necessary resources for the development of a promotional website for state-of-the-art wireless earbuds. The purpose of this project is to provide visitors with detailed information about the features, advantages, and benefits of these earbuds, as well as an interactive and engaging experience that encourages them to make a purchase.
 
 ## Key Features
 
