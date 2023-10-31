@@ -1,0 +1,3 @@
+@use 'mixins' as m;
+
+@include m.fontFace(AzeretMono-Regular, "..//fonts/AzeretMono-Regular");
