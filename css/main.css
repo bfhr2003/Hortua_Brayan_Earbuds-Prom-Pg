@@ -350,7 +350,6 @@ a:hover i {
   text-align: center;
   padding: 12px 16px;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .mobile-nav a:hover {
@@ -358,10 +357,7 @@ a:hover i {
 }
 
 .social-media-style {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin-top: 150px;
+  list-style: none;
 }
 
 .copyright {
