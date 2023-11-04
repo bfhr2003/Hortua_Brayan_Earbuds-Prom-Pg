@@ -1,6 +1,9 @@
 (() => {
     //console.log("IIFE Fired");
     //variables
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
+    const navLinks = document.querySelectorAll("#main-header nav ul li a");
     const menu_btn = document.querySelector('.hamburger');
     const mobile_menu = document.querySelector('.mobile-nav');
     const model = document.querySelector("#model");
@@ -95,7 +98,16 @@
       let selected = document.querySelector(`button[slot="${this.slot}"] > div`);
       gsap.to(selected, 1, { autoAlpha: 0 });
     }
-  
+
+    function scrollLink(e) {    
+      e.preventDefault(); 
+      console.log(e.currentTarget.hash);
+      let selectedLink = e.currentTarget.hash;
+      mobile_menu.classList.remove('is-active');
+      menu_btn.classList.remove('is-active');
+      gsap.to(window, {duration: 1, scrollTo:{y:`${selectedLink}`, offsetY:100 }});
+    }
+
     //Event Listener
     menu_btn.addEventListener('click', function () {
       menu_btn.classList.toggle('is-active');
@@ -107,6 +119,10 @@
     hotspots.forEach(function (hotspot) {
       hotspot.addEventListener("mouseover", showInfo);
       hotspot.addEventListener("mouseout", hideInfo);
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", scrollLink);
     });
   })();
   
