@@ -16,6 +16,26 @@ body {
   background-color: #000000;
 }
 
+#x-ray {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #x-ray {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    background-image: url(../images/xray_airpods_skeleton.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 model-viewer {
   width: auto;
   max-width: 1200px;
@@ -382,20 +402,15 @@ a:hover i {
   position: relative;
 }
 
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .skeleton-title {
   text-align: center;
   font-size: 3.125em;
-}
-
-.hero-img-2 > * {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.hero-img-2 {
-  display: grid;
-  grid-column: span 2;
-  position: relative;
 }
 
 .viewer-title {
