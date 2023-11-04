@@ -9,11 +9,15 @@
         <link rel="icon" href="./images/skeleton_logo.ico">
         <!-- link to greensock main library and scroll plugin -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <!-- ScrollTrigger plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <!-- ScrollTo plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     </head>
 
     <body>
         <h1 class="hidden">Skeleton Airpods</h1>
-        <header>
+        <header id="main-header">
             <div class="grid-con">
                 <h2 class="hidden">Header - Promo Page</h2>
                 <div class="col-start-1 col-end-2 m-col-start-1 m-col-end-2 l-col-span-2 xl-col-span-2">
@@ -27,10 +31,10 @@
                     <nav class="flex-cont-header desktop">
                         <h4 class="hidden">Header Navigation Desktop</h4>
                         <ul class="ul-navigation animation">
-                            <li class="flex-header desktop items"><a href="index.html">Overview</a></li>
-                            <li class="flex-header desktop items"><a href="index.html">X-Ray</a></li>
-                            <li class="flex-header desktop items"><a href="index.html">Tech Specs</a></li>
-                            <li class="flex-header desktop items"><a href="index.html">Buy</a></li>
+                            <li class="flex-header desktop items"><a href="#overview">Overview</a></li>
+                            <li class="flex-header desktop items"><a href="#x-ray-sec">X-Ray</a></li>
+                            <li class="flex-header desktop items"><a href="#tech-spec">Tech Specs</a></li>
+                            <li class="flex-header desktop items"><a href="#buy-sec">Buy</a></li>
                         </ul>
                     </nav>
                 </article>
@@ -39,10 +43,10 @@
                     <nav class="flex-cont-header tablet">
                         <h4 class="hidden">Header Navigation Tablet</h4>
                         <ul class="ul-navigation-tablet animation-tablet">
-                            <li class="flex-header tablet items"><a href="index.html">Overview</a></li>
-                            <li class="flex-header tablet items"><a href="index.html">X-Ray</a></li>
-                            <li class="flex-header tablet items"><a href="index.html">Tech Specs</a></li>
-                            <li class="flex-header tablet items"><a href="index.html">Buy</a></li>
+                            <li class="flex-header tablet items"><a href="#overview">Overview</a></li>
+                            <li class="flex-header tablet items"><a href="#x-ray-sec">X-Ray</a></li>
+                            <li class="flex-header tablet items"><a href="#tech-spec">Tech Specs</a></li>
+                            <li class="flex-header tablet items"><a href="#buy-sec">Buy</a></li>
                         </ul>
                     </nav>
                 </article>
@@ -51,10 +55,10 @@
                     <div class="flex-cont-header">
                         <nav class="mobile-nav">
                             <ul class="social-media-style">
-                                <li><a href="index.html">Overview</a></li>
-                                <li><a href="index.html">X-Ray</a></li>
-                                <li><a href="index.html">Tech Specs</a></li>
-                                <li><a href="index.html">Buy</a></li>
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#x-ray-sec">X-Ray</a></li>
+                                <li><a href="#tech-spec">Tech Specs</a></li>
+                                <li><a href="#buy-sec">Buy</a></li>
                             </ul>
                         </nav>
                         <button class="hamburger">
@@ -66,89 +70,92 @@
         </header>
 
         <main>
-            <section class="full-width-grid-con">
-                <h2 class="hidden">Promo - Video from Jhon's class (1058)</h2>
-                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
-                    <div class="promo-video">
-                        <div class="video-s">
-                            <embed
-                                src="https://player.vimeo.com/video/879665637?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
-                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" class="video-style"
-                                title="video1" />
+            <div id="overview">
+                <section class="full-width-grid-con">
+                    <h2 class="hidden">Promo - Video from Jhon's class (1058)</h2>
+                    <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                        <div class="promo-video">
+                            <div class="video-s">
+                                <embed
+                                    src="https://player.vimeo.com/video/879665637?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" class="video-style"
+                                    title="video1" />
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="hero-img">
-                <h2 class="hidden">Greensock Scrolling Trigger Animation in conjunction with Cinema 4D</h2>
-                <picture>
-                    <img
+                </section>
+                <section class="hero-img">
+                    <h2 class="hidden">Greensock Scrolling Trigger Animation in conjunction with Cinema 4D</h2>
+                    <picture>
+                        <img
+                            sizes="100vw"
+                            srcset="
+                            images/hero-image_jr1xz4_c_scale,w_320.jpg 320w,
+                            images/hero-image_jr1xz4_c_scale,w_1280.jpg 1280w"
+                            src="images/hero-image_jr1xz4_c_scale,w_1280.jpg"
+                            alt="">
+                    </picture>
+                    <article>
+                        <h2 class="skeleton-title">Scrolling Animation with Greensock Library</h2>
+                    </article>
+                </section>
+                <section class="hero-img">
+                    <h2 class="hidden">Greensock Scrolling Trigger Animation in conjunction with Cinema 4D</h2>
+                    <picture>
+                        <img
                         sizes="100vw"
                         srcset="
-                        images/hero-image_jr1xz4_c_scale,w_320.jpg 320w,
-                        images/hero-image_jr1xz4_c_scale,w_1280.jpg 1280w"
-                        src="images/hero-image_jr1xz4_c_scale,w_1280.jpg"
+                        images/case_close_ykkcx2_c_scale,w_320.jpg 320w,
+                        images/case_close_ykkcx2_c_scale,w_1280.jpg 1280w"
+                        src="images/case_close_ykkcx2_c_scale,w_1280.jpg"
                         alt="">
-                </picture>
-                <article>
-                    <h2 class="skeleton-title">Scrolling Animation with Greensock Library</h2>
-                </article>
-            </section>
-            <section class="hero-img">
-                <h2 class="hidden">Greensock Scrolling Trigger Animation in conjunction with Cinema 4D</h2>
-                <picture>
-                    <img
-                    sizes="100vw"
-                    srcset="
-                    images/case_close_ykkcx2_c_scale,w_320.jpg 320w,
-                    images/case_close_ykkcx2_c_scale,w_1280.jpg 1280w"
-                    src="images/case_close_ykkcx2_c_scale,w_1280.jpg"
-                    alt="">
-                    </picture>
-                <article>
-                    <h2 class="skeleton-title">Scrolling Animation with Greensock Library</h2>
-                </article>
-            </section>
-
-            <section class="grid-con">
-                <h2 class="hidden">Xray - View</h2>
-                    <div id="x-ray" class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
-                        <h2>Xray - View</h2>
-                    </div>
-            </section>
-            <section id="mobile-tablet-view">
-                <h2>Mobile View and Tablet View</h2>
-                    <section class="hero-img">
-                        <picture>
-                            <img
-                            sizes="100vw"
-                            srcset="
-                            images/case_close_ykkcx2_c_scale,w_320.jpg 320w,
-                            images/case_close_ykkcx2_c_scale,w_1280.jpg 1280w"
-                            src="images/case_close_ykkcx2_c_scale,w_1280.jpg"
-                            alt="">
                         </picture>
-                        <article>
-                            <h2 class="skeleton-title">Default View</h2>
-                        </article>
-                    </section>
-                    <section class="hero-img">
-                        <picture>
-                            <img
-                            sizes="100vw"
-                            srcset="
-                            images/case_close_ykkcx2_c_scale,w_320.jpg 320w,
-                            images/case_close_ykkcx2_c_scale,w_1280.jpg 1280w"
-                            src="images/case_close_ykkcx2_c_scale,w_1280.jpg"
-                            alt="">
-                        </picture>
-                        <article>
-                            <h2 class="skeleton-title">X-Ray View</h2>
-                        </article>
-                    </section>
-            </section>
-            <section class="full-width-grid-con">
-            <h2 class="hidden">Model Viewer - Section</h2>
+                    <article>
+                        <h2 class="skeleton-title">Scrolling Animation with Greensock Library</h2>
+                    </article>
+                </section>
+            </div>
+            <div id="x-ray-sec">
+                <section class="grid-con">
+                    <h2 class="hidden">Xray - View</h2>
+                        <div id="x-ray" class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                            <h2>Xray - View</h2>
+                        </div>
+                </section>
+                <section id="mobile-tablet-view">
+                    <h2>Mobile View and Tablet View</h2>
+                        <section class="hero-img">
+                            <picture>
+                                <img
+                                sizes="100vw"
+                                srcset="
+                                images/case_close_ykkcx2_c_scale,w_320.jpg 320w,
+                                images/case_close_ykkcx2_c_scale,w_1280.jpg 1280w"
+                                src="images/case_close_ykkcx2_c_scale,w_1280.jpg"
+                                alt="">
+                            </picture>
+                            <article>
+                                <h2 class="skeleton-title">Default View</h2>
+                            </article>
+                        </section>
+                        <section class="hero-img">
+                            <picture>
+                                <img
+                                sizes="100vw"
+                                srcset="
+                                images/case_close_ykkcx2_c_scale,w_320.jpg 320w,
+                                images/case_close_ykkcx2_c_scale,w_1280.jpg 1280w"
+                                src="images/case_close_ykkcx2_c_scale,w_1280.jpg"
+                                alt="">
+                            </picture>
+                            <article>
+                                <h2 class="skeleton-title">X-Ray View</h2>
+                            </article>
+                        </section>
+                </section>
+            </div>
+            <section id="tech-spec" class="full-width-grid-con">
+                <h2 class="hidden">Model Viewer - Section</h2>
                 <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
                     <article>
                         <h2 class="viewer-title">Main Features - Try Now!</h2>
@@ -203,7 +210,7 @@
                         </model-viewer>
                 </div>
             </section>   
-            <section class="grid-con">
+            <section id="buy-sec" class="grid-con">
                 <h2 class="hidden">Buy Section - Prices Info and Colors Variations</h2>
                 <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
                     <h2>Red</h2>
