@@ -28,6 +28,11 @@ a {
     color: white;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 .items {
     text-decoration: none;
     font-weight: 300;
@@ -60,7 +65,7 @@ a {
 
 .ul-navigation-tablet a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 12px;
     padding: 10px;
 }
 
@@ -142,7 +147,6 @@ a:hover i {
     background-color: #272eb3;
     color: #ffffff;
 }
-
 
 /* ---Mobile Menu--- */
 .hamburger {
