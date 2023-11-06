@@ -197,6 +197,11 @@ a {
   color: white;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .items {
   text-decoration: none;
   font-weight: 300;
@@ -227,7 +232,7 @@ a {
 
 .ul-navigation-tablet a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 12px;
   padding: 10px;
 }
 
@@ -389,6 +394,86 @@ a:hover i {
   text-align: center;
   justify-content: center;
   font-weight: lighter;
+}
+
+footer {
+  background-color: #272eb3;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .footer-content div {
+  flex: 1 0 200px;
+  margin: 20px;
+  text-align: left;
+}
+footer .copyright {
+  margin-top: 30px;
+  font-weight: lighter;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.newsletter form input[type=email] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.newsletter form input[type=submit] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #272eb3;
+  color: #ffffff;
+  cursor: pointer;
+}
+.newsletter form input[type=submit]:hover {
+  background-color: #1a1f8b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+form label {
+  margin-bottom: 10px;
+}
+form input, form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+form input:focus, form textarea:focus {
+  border-color: #272eb3;
+  box-shadow: 0 0 10px rgba(39, 46, 179, 0.3);
+}
+form input:invalid, form textarea:invalid {
+  border-color: #ff0000;
+}
+form input[type=submit] {
+  cursor: pointer;
+  background-color: #272eb3;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+}
+form input[type=submit]:hover {
+  background-color: #5900b3;
 }
 
 .hero-img > * {

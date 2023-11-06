@@ -8,3 +8,54 @@
     justify-content: center;
     font-weight: lighter;
 }
+
+footer {
+    background-color: #272eb3;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        div {
+            flex: 1 0 200px;
+            margin: 20px;
+            text-align: left;
+        }
+    }
+
+    .copyright {
+        margin-top: 30px;
+        font-weight: lighter;
+    }
+}
+
+.newsletter {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #272eb3;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1a1f8b;
+            }
+        }
+    }
+}
