@@ -16,7 +16,7 @@ body {
   background-color: #000000;
 }
 
-#x-ray {
+#outerShell {
   display: none;
 }
 
@@ -24,16 +24,40 @@ body {
   #mobile-tablet-view {
     display: none;
   }
-  #x-ray {
-    width: 100%;
-    height: 80vh;
-    margin: 0 auto;
-    background-image: url(../images/xray_airpods_skeleton.png);
-    background-position: center;
+  #outerShell {
+    display: block;
+    max-width: 1200px;
+    border: solid 1px #666;
+  }
+  #imageCon {
+    position: block;
+    max-width: 1200px;
+    height: 90vh;
+  }
+  .slideImage {
+    position: absolute; /*images are stacked in order via absolute*/
+    left: 0;
+    right: 0;
+    height: 90vh;
+  }
+  .image-right {
+    background: url(../images/xray_view.jpg) no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .image-left {
+    background: url(../images/default_view.jpg) no-repeat;
+    width: 50%; /*start the image at the halfway point*/
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .image-drag {
+    background-color: #666;
+    left: 50%;
+    width: 4px;
+    cursor: pointer;
   }
 }
 model-viewer {

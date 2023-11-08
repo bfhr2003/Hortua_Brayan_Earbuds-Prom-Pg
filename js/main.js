@@ -3,9 +3,18 @@
     //variables
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
+    // Xray Functionality
+    let imageCon = document.querySelector('#imageCon'),
+        drag = document.querySelector('.image-drag'),
+        left = document.querySelector('.image-left'),
+        dragging = false,
+        min = 0,
+        max = imageCon.offsetWidth;
+    // Scrolling Functionality Variables
     const navLinks = document.querySelectorAll("#main-header nav ul li a");
     const menu_btn = document.querySelector('.hamburger');
     const mobile_menu = document.querySelector('.mobile-nav');
+    // Model Viewer Variables
     const model = document.querySelector("#model");
     const hotspots = document.querySelectorAll(".Hotspot");
     const infoBoxes = [
@@ -57,6 +66,7 @@
     ];
   
     //functions
+    // MODEL VIEWER
     function modelLoaded() {
       //console.log(hotspots);
       hotspots.forEach(hotspot => {
@@ -99,6 +109,7 @@
       gsap.to(selected, 1, { autoAlpha: 0 });
     }
 
+    // Scrolling Functionality
     function scrollLink(e) {    
       e.preventDefault(); 
       console.log(e.currentTarget.hash);
@@ -107,23 +118,55 @@
       menu_btn.classList.remove('is-active');
       gsap.to(window, {duration: 1, scrollTo:{y:`${selectedLink}`, offsetY:100 }});
     }
+// Xray Functionality
+    function onDown() {
+      dragging = true;
+      console.log("Set to true");
+  }
+  function onUp() {
+      dragging = false;
+      console.log("Set to false");
+  }
+
+  function onMove(event) {
+      // console.log("on move called");
+      if (dragging===true) {
+          // console.log("dragging");
+          let x = event.clientX - imageCon.getBoundingClientRect().left;
+          console.log(x);
+
+          if (x < min) {
+              x = min;
+          } else if (x > max) {
+              x = max-10;
+          }
+
+          drag.style.left = x + 'px';
+          left.style.width = x + 'px';
+      }
+  }
 
     //Event Listener
+    // Hamburger Menu Event Listener
     menu_btn.addEventListener('click', function () {
       menu_btn.classList.toggle('is-active');
       mobile_menu.classList.toggle('is-active');
   });
-
+    // Model Viewer Event Listener
     model.addEventListener("load", modelLoaded);
   
     hotspots.forEach(function (hotspot) {
       hotspot.addEventListener("mouseover", showInfo);
       hotspot.addEventListener("mouseout", hideInfo);
     });
-
+    // Scrolling Event Listener
     navLinks.forEach((link) => {
       link.addEventListener("click", scrollLink);
     });
+    // Xray Event Listener
+    drag.addEventListener('mousedown', onDown);
+        document.body.addEventListener('mouseup', onUp);
+        document.body.addEventListener('mousemove', onMove);
   })();
   
   
