@@ -26,35 +26,29 @@ body {
   }
   #outerShell {
     display: block;
-    max-width: 1200px;
-    border: solid 1px #666;
+    border: solid 1px #272eb3;
   }
   #imageCon {
-    position: block;
-    max-width: 1200px;
-    height: 90vh;
+    position: relative;
+    height: 800px;
   }
   .slideImage {
     position: absolute; /*images are stacked in order via absolute*/
     left: 0;
     right: 0;
-    height: 90vh;
+    height: 800px;
   }
   .image-right {
     background: url(../images/xray_view.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
   }
   .image-left {
     background: url(../images/default_view.jpg) no-repeat;
     width: 50%; /*start the image at the halfway point*/
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
   }
   .image-drag {
-    background-color: #666;
+    background-color: #272eb3;
     left: 50%;
     width: 4px;
     cursor: pointer;
