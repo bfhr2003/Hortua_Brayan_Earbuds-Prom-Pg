@@ -3,6 +3,24 @@
     //variables
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
+    // Canvas Variables
+    const canvas = document.querySelector("#explode-view");
+    const context = canvas.getContext("2d");
+    canvas.width = 1920;
+    canvas.height = 1080;
+    const frameCount = 300;
+    const images = [];
+    const buds = {
+        frame: 0
+    }
+
+    for(let i=0; i<frameCount; i++) {
+      //console.log(i);
+    const img = new Image();
+      // string I am trying to create: images/explode_13.webp
+    img.src = `images/frame${(i+1).toString().padStart(4, '0')}.jpg`;
+    images.push(img);
+    }
     // Xray Functionality
     let imageCon = document.querySelector('#imageCon'),
         drag = document.querySelector('.image-drag'),
@@ -144,6 +162,29 @@
           drag.style.left = x + 'px';
           left.style.width = x + 'px';
       }
+  }
+
+    //CANVAS FUNCTIONALITY
+    gsap.to(buds, {
+      frame: 299,
+      snap: "frame",
+      scrollTrigger: {
+          trigger: "#explode-view",
+          pin: true,
+          scrub: 1,
+          markers: true,
+          start: "top top"
+      },
+      onUpdate: render
+  })
+
+  images[0].addEventListener("onload", render);
+
+  function render() {
+      console.log(buds.frame);
+      console.log(images[buds.frame]);
+      context.clearRect(0,0, canvas.width, canvas.height);
+      context.drawImage(images[buds.frame],0,0);
   }
 
     //Event Listener
