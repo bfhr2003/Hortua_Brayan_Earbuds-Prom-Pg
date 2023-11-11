@@ -18,7 +18,7 @@
       //console.log(i);
     const img = new Image();
       // string I am trying to create: images/explode_13.webp
-    img.src = `images/frame${(i+1).toString().padStart(4, '0')}.jpg`;
+    img.src = `images/1_seq/frame${(i+1).toString().padStart(4, '0')}.jpg`;
     images.push(img);
     }
     // Xray Functionality
@@ -37,39 +37,34 @@
     const hotspots = document.querySelectorAll(".Hotspot");
     const infoBoxes = [
       {
-        title: "Main Microphone",
-        text: "Thanks to the integrated noise cancellation technology, the main microphone effectively filters out unwanted ambient noises, such as traffic or background noise, allowing you to enjoy clear conversations even in noisy environments.",
-        img: "images/mainmicrophone.png"
-      },
-      {
-        title: "Circular Microphone",
+        title: "Circular noise cancellation microphone",
         text: "The circular microphone's ingenious design enables it to capture sound equally from all directions, creating a balanced and immersive audio experience. This makes it suitable for recording meetings, interviews, and group discussions, where multiple sound sources need to be captured simultaneously.",
         img: "images/circularmicrophone.png"
       },
       {
-        title: "Comfort Rubber",
+        title: "Rectangular noise cancellation microphone",
+        text: "Thanks to the integrated noise cancellation technology, the main microphone effectively filters out unwanted ambient noises, such as traffic or background noise, allowing you to enjoy clear conversations even in noisy environments.",
+        img: "images/mainmicrophone.png"
+      },
+      {
+        title: "Comfort rubber",
         text: "By providing a comfortable and secure fit, Comfort Rubber tips contribute to a better overall listening experience.",
         img: "images/comfortrubber.png"
       },
       {
-        title: "Quality Sound (Speaker)",
+        title: "Quality sound (Speaker)",
         text: "A cutting-edge, high-quality speaker that delivers unparalleled audio performance.",
         img: "images/qualitysound.png"
       },
       {
-        title: "Logo (Skeleton)",
+        title: "Logo SKELETON",
         text: "This distinctive logo captures the essence of Skeleton, merging elegance and modernity into a visually striking design.",
         img: "images/logo_skeleton.png"
       },
       {
-        title: "Fast Charge",
-        text: "Experience unparalleled convenience with our advanced fast charging technology for your headphones. Say goodbye to long waiting times and hello to instant power whenever you need it.",
-        img: "images/fastcharge.png"
-      },
-      {
-        title: "Touchable Control",
-        text: "Revolutionize your audio experience with our touchable control feature. Seamlessly manage your music, calls, and settings with just a touch. The power is literally at your fingertips, allowing you to play or pause tracks, adjust volume, answer calls, and activate voice assistants effortlessly.",
-        img: "images/touchablecontrol.png"
+        title: "Steel cover - Back",
+        text: "Discover the epitome of durability and sophistication with our Steel Cover Back. Crafted from high-quality stainless steel, this sleek cover adds a touch of elegance while providing robust protection to your device.",
+        img: "images/steelcoverback.png"
       },
       {
         title: "Load notice button",
@@ -77,9 +72,14 @@
         img: "images/loadbutton.png"
       },
       {
-        title: "Steel Cover - Back",
-        text: "Discover the epitome of durability and sophistication with our Steel Cover Back. Crafted from high-quality stainless steel, this sleek cover adds a touch of elegance while providing robust protection to your device.",
-        img: "images/steelcoverback.png"
+        title: "Touchable control",
+        text: "Revolutionize your audio experience with our touchable control feature. Seamlessly manage your music, calls, and settings with just a touch. The power is literally at your fingertips, allowing you to play or pause tracks, adjust volume, answer calls, and activate voice assistants effortlessly.",
+        img: "images/touchablecontrol.png"
+      },
+      {
+        title: "Magnet - Fast charging",
+        text: "Experience unparalleled convenience with our advanced fast charging technology for your headphones. Say goodbye to long waiting times and hello to instant power whenever you need it.",
+        img: "images/fastcharge.png"
       }
     ];
   
