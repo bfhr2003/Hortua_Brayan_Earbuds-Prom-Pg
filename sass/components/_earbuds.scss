@@ -1,4 +1,17 @@
 #explode-view {
-    max-width: 100%;
-    /* width: 100vw; */
+    display: none;
+}
+#picture-canvas-mob {
+    display: block;
+}
+
+@media screen and (min-width: 769px) {
+    #picture-canvas-mob {
+        display: none;
+    }
+    #explode-view {
+        display: block;
+        max-width: 100%;
+        /* width: 100vw; */
+    }
 }

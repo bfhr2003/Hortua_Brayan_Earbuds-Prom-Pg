@@ -23,8 +23,9 @@
                 <h2 class="hidden">Header - Promo Page</h2>
                 <div class="col-start-1 col-end-2 m-col-start-1 m-col-end-2 l-col-span-2 xl-col-span-2 logo-container">
                     <a href="index.html">
-                        <img src="images/skeleton_logo.svg" height="50" alt="Skeleton Logo">
                         <h2 class="hidden">Skeleton Airpods</h2>
+                        <img src="images/skeleton_logo.svg" height="30" alt="Skeleton Logo">
+                        <span><h2>Skeleton</h2></span>
                     </a>
                 </div>
                 <article class="col-start-4 col-end-4 m-col-start-11 m-col-end-13 l-col-span-10 xl-col-span-10 desktop">
@@ -76,24 +77,34 @@
         <main>
             <div id="overview">
                 <section class="full-width-grid-con">
-                    <h2 class="hidden">Promo - Video from Jhon's class (1058)</h2>
+                    <h2 class="hidden">Promo/Animated - Video from Jhon's class (1058)</h2>
+                    <div class="col-span-full">
+                        <canvas id="explode-view"></canvas> 
+                    </div>
+                    <div class="col-span-full" id="picture-canvas-mob">
+                        <img src="images/1_seq/frame0000.jpg" width="100%" alt="earbud">
+                    </div>
                     <div class="col-start-2 col-end-3">
                         <div class="promo-video">
-                            <div class="video-s">
+                            <div class="video-s video-style">
                                 <embed
                                 src="https://player.vimeo.com/video/883553932?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hortua_Brayan_EarbudSub3-WEB 7-59-13 PM"/>
                             </div>
                         </div>
                     </div>
-                    <!-- I also changed these values for the grid from col-span-full to col-start-2 col-end-3 -->
-                    <div class="col-span-full">
-                        <canvas id="explode-view"></canvas> 
-                    </div>
+                </section>
+
+                <section class="grid-con">
+                    <article class="col-span-full hero-text-overview">
+                        <p>
+                            Immerse yourself in a rich, powerful sound that brings your favorite songs to life. Our earbuds boast state-of-the-art Bluetooth technology, eliminating the hassle of wires and providing a seamless connection to your devices. Whether you're on the move or unwinding at home, these earbuds are designed to complement your lifestyle.
+                        </p>
+                    </article>
                 </section>
             </div>
             <div id="x-ray-sec" class="grid-con">
                     <section class="col-span-full">
-                        <h2 class="hidden">X-Ray revealer</h2>
+                        <h2 class="hidden">X-Ray Revealer</h2>
                         <div id="mobile-tablet-view">
                             <img src="images/xray_view.jpg"  width="100%" alt="x-ray">
                             <img src="images/default_view.jpg" width="100%" alt="earbud">
@@ -110,6 +121,19 @@
                         </div>
                     </section>
             </div>
+
+            <section class="full-width-grid-con">
+                <div class="col-span-full video-animation-con">
+                    <video id="foreground-video" muted autoplay loop>
+                    <source src="videos/sound_wave.mov" type="video/mp4">
+                    </video>
+                    <article class="tex-video">
+                        <p>
+                            Experience music like never before with our cutting-edge wireless earbuds! Step into a world of unparalleled audio freedom as you cut the cord and embrace the convenience of our top-of-the-line earbuds
+                        </p>
+                    </article>
+                </div>
+            </section>
             <section id="tech-spec" class="full-width-grid-con">
                 <h2 class="hidden">Model Viewer - Section</h2>
                 <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
@@ -169,63 +193,82 @@
             </section>   
             <section id="buy-sec" class="grid-con">
                 <h2 class="hidden">Buy Section - Prices Info and Colors Variations</h2>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
-                    <h2>Red</h2>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>White Blue</h4>
                     <article>
+                        <img src="images/white_blue.png" width="100%" alt="White Blue color">
                         <p>Brief Description and Price<br>$299</p>
                     </article>
-                    <button>
-                        <h2>Buy Now</h2>
-                    </button>
+                    <a href="#"><h3>Buy Now</h3></a>
                 </div>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
-                    <h2>Gold</h2>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>White Green</h4>
                     <article>
+                        <img src="images/white_green.png" width="100%" alt="White Green color">
                         <p>Brief Description and Price<br>$299</p>
                     </article>
-                    <button>
-                        <h2>Buy Now</h2>
-                    </button>
+                    <a href="#"><h3>Buy Now</h3></a>
                 </div>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
-                    <h2>White</h2>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>White Pink</h4>
                     <article>
+                        <img src="images/white_pink.png" width="100%" alt="White Pink color">
                         <p>Brief Description and Price<br>$299</p>
                     </article>
-                    <button>
-                        <h2>Buy Now</h2>
-                    </button>
+                    <a href="#"><h3>Buy Now</h3></a>
                 </div>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
-                    <h2>Black</h2>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>Violet</h4>
                     <article>
+                        <img src="images/violet.png" width="100%" alt="Violet color">
                         <p>Brief Description and Price<br>$299</p>
                     </article>
-                    <button>
-                        <h2>Buy Now</h2>
-                    </button>
+                    <a href="#"><h3>Buy Now</h3></a>
                 </div>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
-                    <h2>Yellow</h2>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>Pink Black</h4>
                     <article>
+                        <img src="images/pink_black.png" width="100%" alt="Pink Black color">
                         <p>Brief Description and Price<br>$299</p>
                     </article>
-                    <button>
-                        <h2>Buy Now</h2>
-                    </button>
+                    <a href="#"><h3>Buy Now</h3></a>
                 </div>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
-                    <h2>Gray</h2>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>Gray</h4>
                     <article>
+                        <img src="images/orange.png" width="100%" alt="Orange color">
                         <p>Brief Description and Price<br>$299</p>
                     </article>
-                    <button>
-                        <h2>Buy Now</h2>
-                    </button>
+                    <a href="#"><h3>Buy Now</h3></a>
+                </div>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>Dark Gray</h4>
+                    <article>
+                        <img src="images/dark-gray.png" width="100%" alt="Dark Gray color">
+                        <p>Brief Description and Price<br>$299</p>
+                    </article>
+                    <a href="#"><h3>Buy Now</h3></a>
+                </div>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>Bone Yellow</h4>
+                    <article>
+                        <img src="images/bone_yellow.png" width="100%" alt="Bone Yellow color">
+                        <p>Brief Description and Price<br>$299</p>
+                    </article>
+                    <a href="#"><h3>Buy Now</h3></a>
+                </div>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4">
+                    <h4>Soft Green</h4>
+                    <article>
+                        <img src="images/soft_green.png" width="100%" alt="Orange color">
+                        <p>Brief Description and Price<br>$299</p>
+                    </article>
+                    <a href="#"><h3>Buy Now</h3></a>
                 </div>
             </section>
+            <!-- Contact Section -->
             <section id="contact" class="grid-con">
-                <div class="col-span-full box">
+                <div class="col-span-full">
                     <h2>Contact Form</h2>
                     <form action="submit_form.php" method="post">
                         <label for="name"><i class="fa fa-user"></i> Name:</label>
@@ -240,7 +283,7 @@
             </section>
         </main>
         <footer class="grid-con">
-            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box footer-content">
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 footer-content">
                 <!-- Contact info -->
                 <div class="contact-info">
                     <h3>Contact Us</h3>
