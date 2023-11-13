@@ -108,6 +108,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #131313;
 }
 
 #buy-sec {
@@ -252,6 +253,10 @@ video-animation-con {
     text-align: center;
   }
 }
+#tech-spec {
+  background-color: #131313;
+}
+
 .model-view-con {
   border: 1px solid #ffffff;
   margin-bottom: 1.25rem;
@@ -629,66 +634,73 @@ a:hover i {
   background-color: #000000;
 }
 
-.copyright {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #ffffff;
-  background-color: #272eb3;
+.copyright-con {
   display: flex;
-  text-align: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.copyright {
+  color: #ffffff;
+  background-color: #161616;
+  display: flex;
+  text-align: end;
   font-weight: lighter;
+  font-size: 10px;
 }
 
 footer {
-  background-color: #f5f5f5;
-  color: #000000;
+  background-color: #161616;
+  color: #ffffff;
   padding: 30px;
   text-align: center;
-}
-footer .footer-content {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-footer .footer-content div {
-  margin: 20px;
+
+.footer-column {
+  flex: 1 0 20%; /* Crece y se encoge igualmente, base de 20% */
+  padding: 10px;
+}
+
+.footer-column ul li {
+  list-style: none;
+  font-size: 12px;
+  border-left: 1px solid #ffffff;
   text-align: left;
-}
-footer .copyright {
-  margin-top: 30px;
-  font-weight: lighter;
+  padding: 10px;
 }
 
-.newsletter form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+@media (max-width: 600px) {
+  .footer-column {
+    flex: 1 0 100%;
+  }
 }
-.newsletter form input[type=email] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.newsletter form input[type=submit] {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #272eb3;
-  color: #ffffff;
-  cursor: pointer;
-}
-.newsletter form input[type=submit]:hover {
-  background-color: #1a1f8b;
-}
-
 #contact {
   margin: 0px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 #support-text {
   text-align: center;
+}
+
+.support-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 0 10px;
+  font-size: 12px;
+  background-color: #efefef;
+}
+
+.support-con article a {
+  margin: 0;
+  color: #000000;
+  font-size: 10px;
+  border-top: 1px solid #000000;
 }
 
 form {
