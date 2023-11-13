@@ -2,6 +2,96 @@
     //console.log("IIFE Fired");
     //variables
     gsap.registerPlugin(ScrollTrigger);
+
+    //animation for the log
+    gsap.from(["img[src='images/skeleton_logo.svg']", ".skeleton-text"], {
+      duration: 1, // 
+      opacity: 0, // 
+      scale: 0.5, //
+      ease: "power2.out",
+    });
+
+    // animation for the images, photos
+    gsap.from(".img-vertical img", {
+      scrollTrigger: {
+        trigger: ".img-vertical",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true, 
+      },
+      x: 500, 
+      opacity: 0, 
+    });
+
+    gsap.from(".chip-img img", {
+      scrollTrigger: {
+        trigger: ".chip-img",
+        start: "top bottom",
+        end: "bottom bottom",
+        scrub: true, 
+      },
+      x: 500, 
+      opacity: 0, 
+    });
+
+    // animation for the text for each section
+    gsap.utils.toArray(".vertical-text .line").forEach((line, i) => {
+      gsap.from(line, {
+        scrollTrigger: {
+          trigger: line,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+        y: 500,
+        opacity: 0,
+        color: i % 2 === 0 ? "green" : "red",
+      });
+    });
+
+    gsap.utils.toArray(".text-waves").forEach((line, i) => {
+      gsap.from(line, {
+        scrollTrigger: {
+          trigger: line,
+          start: "top bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+        y: 500,
+        opacity: 0,
+        color: i % 2 === 0 ? "red" : "blue",
+      });
+    });
+
+    // animation for the buy section -color versions
+    gsap.utils.toArray(".color-img").forEach((img) => {
+      gsap.from(img, {
+        scrollTrigger: {
+          trigger: img,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+        x: -500,
+        opacity: 0,
+      });
+    });
+
+    // animation for the mobile tablet xray images
+    gsap.utils.toArray("#mobile-tablet-view img").forEach((img) => {
+      gsap.from(img, {
+        scrollTrigger: {
+          trigger: img,
+          start: "top center", 
+          end: "bottom center", 
+          scrub: true,
+        },
+        y: 10,
+        rotation: 360, 
+        opacity: 0, 
+      });
+    });
+
     gsap.registerPlugin(ScrollToPlugin);
     // Canvas Variables
     const canvas = document.querySelector("#explode-view");
@@ -13,7 +103,6 @@
     const buds = {
         frame: 0
     }
-
     for(let i=0; i<frameCount; i++) {
       //console.log(i);
     const img = new Image();
@@ -21,6 +110,7 @@
     img.src = `images/1_seq/frame${(i+1).toString().padStart(4, '0')}.jpg`;
     images.push(img);
     }
+
     // Xray Functionality
     let imageCon = document.querySelector('#imageCon'),
         drag = document.querySelector('.image-drag'),
@@ -181,11 +271,11 @@
   images[0].addEventListener("onload", render);
 
   function render() {
-      console.log(buds.frame);
-      console.log(images[buds.frame]);
-      context.clearRect(0,0, canvas.width, canvas.height);
-      context.drawImage(images[buds.frame],0,0);
-  }
+    console.log(buds.frame);
+    console.log(images[buds.frame]);
+    context.clearRect(0,0, canvas.width, canvas.height);
+    context.drawImage(images[buds.frame],0,0);
+}
 
     //Event Listener
     // Hamburger Menu Event Listener

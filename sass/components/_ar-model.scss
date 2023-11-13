@@ -1,19 +1,17 @@
   // Customize our own hotspot 
+  .model-view-con {
+    border: 1px solid #ffffff;
+    margin-bottom: 1.25rem;
+  }
 
   model-viewer {
     width: auto;
     max-width: 75rem;
-    height: 700px;
-    background-color: #272eb3;
+    height: 800px;
+    background-color: #4285f4;
     margin: 0 auto;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
   }
-
-  .viewer-title {
-    text-align: center;
-    font-size: 20px;
-    color: #ffffff;
-}
   
   // Customize our own hotspot
   .Hotspot {

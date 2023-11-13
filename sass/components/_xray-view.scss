@@ -1,8 +1,36 @@
 #x-ray-sec {
     padding: 5px 5px 5px 5px;
+    color: #fff;
+    margin: 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 #outerShell {
     display: none;
+}
+
+video-animation-con {
+    position: relative;
+}
+
+//VIDEO SOUND WAVES WITH OVERLAY TEXT
+.foreground-video {
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.tex-waves {
+    position: relative;
+    color: #fff;
+    top: -10%;
+    left: 0;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 1200px) {
@@ -14,10 +42,18 @@
         display: block;
         border: solid 1px #272eb3;
     }
-    
+
+    .xray-con {
+        width: 80vw;
+    }
+
+
     #imageCon {
         position: relative;
         height: 800px;
+        // background-size: cover; // Asegura que la imagen de fondo cubra todo el contenedor
+        // background-position: center; 
+        // overflow: auto;
     }
     
     .slideImage {
@@ -47,6 +83,12 @@
         left: 50%;
         width: 4px;
         cursor: pointer;
+    }
+
+    .tex-waves {
+        font-size: 1.125rem;
+        padding: 5rem;
+        text-align: center;
     }
 }
 
